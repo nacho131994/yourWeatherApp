@@ -10,6 +10,10 @@
     -moz-box-shadow: 9px 7px 0px -1px rgb(126, 126, 126);
     box-shadow: 9px 7px 0px -1px rgb(126, 126, 126);
 }
+.app-logo{
+    width:300px;
+    height:300px
+}
 .current-weather{
     display:flex;
     flex-direction: row;
@@ -126,8 +130,12 @@
 
 }
 .no-data-container{
-    background-color: black;
+    background-color: rgb(187, 187, 187);
     color:white;
+    width: fit-content;
+    margin:50px auto;
+    padding:30px;
+    border-radius:10px
 }
 .clear-sky {
    background:url("https://media.istockphoto.com/id/1163306732/es/foto/fondo-azul-claro-del-cielo-nubes-con-fondo.jpg?s=612x612&w=0&k=20&c=4a44y5W6IraKLPjp4El2IYTfiwNsU9NMDBXWxjNgr_c=");
@@ -136,7 +144,9 @@
     background:url("https://media-cdn.tripadvisor.com/media/photo-s/19/cc/3b/7c/clear-skies-at-night.jpg")
   }
 .few-clouds-sky{
-    background:url("https://w0.peakpx.com/wallpaper/247/622/HD-wallpaper-sky%E2%9C%A8%E2%9C%A8-blue-sky-thumbnail.jpg")
+    background:url("https://w0.peakpx.com/wallpaper/247/622/HD-wallpaper-sky%E2%9C%A8%E2%9C%A8-blue-sky-thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
    }
   
 .scattered-clouds-sky{

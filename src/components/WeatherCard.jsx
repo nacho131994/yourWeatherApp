@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // STYLES
 import "./Spinner.css";
 import "./WeatherCard.css";
@@ -13,6 +13,7 @@ import mintemp from "../images/mintemp.png";
 import hum from "../images/humedad.png";
 import wind from "../images/viento.png";
 import sensation from "../images/temperatura.png";
+import climateLogo from "../images/meteorologia.png";
 
 const WeatherCard = ({ showWeatherCard, loading, weather, forecast }) => {
   let backgroundClass = "background-class";
@@ -163,9 +164,12 @@ const WeatherCard = ({ showWeatherCard, loading, weather, forecast }) => {
           </div>
         </>
       ) : (
-        <div className="no-data-container">
-          <h1 className="no-data">NO DATA FOUND ☹️</h1>
-        </div>
+        <>
+          <div className="no-data-container">
+            <h1 className="no-data">Search for a valid city</h1>
+          </div>
+          <img src={climateLogo} className="app-logo" />
+        </>
       )}
     </>
   );
