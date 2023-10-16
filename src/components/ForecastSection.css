@@ -1,0 +1,49 @@
+
+.forecast-section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);;   
+   
+}
+.forecast{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:3px 20px 3px 20px;
+    background-color: rgba(239, 239, 239, 0.526);
+    margin:10px 0 10px 0;
+    border-radius: 10px;
+    
+}
+.forecast-icon{
+    width:4rem;
+    height:4rem
+}
+.hr-forecast{
+    width:100%;
+   
+}
+
+@media (max-width: 768px) {
+    .forecast-section {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .forecast {
+     width:30px;
+     height:60px;
+     margin:30px 0 30px 0
+     
+    }
+  
+    .forecast-icon {
+      width: 3rem;
+      height: 3rem;
+    }
+  }

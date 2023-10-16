@@ -1,0 +1,46 @@
+.searchbar-container{
+  margin-top:3rem
+}
+.input-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:10px;
+}
+.input-section-input{
+    width:20rem;
+    height:2rem;
+    padding:0px 10px 0px 10px;
+    border:none
+}
+.input-section-input:focus{
+outline: none;
+
+   
+}
+
+.input-section-input::placeholder{
+    text-align: center;
+}
+.input-section-button{
+    padding:5px;
+    border-radius:10px;
+    background-color: rgb(35, 105, 235);
+    color:white;
+    cursor: pointer;
+    border:none
+}
+.input-section-button:hover{
+    background-color: black;
+    color:white;
+
+ }
+
+ @media (max-width: 400px) {
+    .input-section-input{
+     width:290px
+    }
+    }
+    
